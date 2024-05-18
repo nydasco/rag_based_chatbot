@@ -10,6 +10,6 @@ device = "cpu"
 batch_size = 32
 
 [rag]
-source_file_location = "./to_process"
-processed_file_location = "./processed"
+source_file_location = "../to_process"
+processed_file_location = "../processed"
 vector_store_path = "./chroma_db"
