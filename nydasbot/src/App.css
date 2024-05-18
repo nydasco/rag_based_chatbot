@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#background_grad {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom right, #426d7f, #060b18)
+}
+
+.App-header {
+  background-color: #426d7f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box3 {
+  max-width: 70%;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #e6e6e6, #d9e1e3);
+  color: #000;
+  padding: 10px;
+  font-family: arial;
+  position: relative;
+  word-wrap: break-word;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+/* speech bubble 13 */
+
+.sb13:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #d9e1e3;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #d9e1e3;
+  border-bottom: 15px solid transparent;
+  right: -20px;
+  top: 0px;
+}
+
+
+/* speech bubble 14 */
+
+.sb14:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #e6e6e6;
+  border-top: 15px solid #e6e6e6;
+  border-bottom: 15px solid transparent;
+  left: -20px;
+  top: 0px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  font-size: 12px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 10px;
+  width: 80%;
+  background-color: #e6e6e6;
+  color: #000;
+  text-align: left;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px dotted;
+  box-shadow: 5px 10px 8px #888888;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

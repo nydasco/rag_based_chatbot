@@ -1,0 +1,15 @@
+[general]
+logging_level = 50 #logging.INFO
+port = 8765
+
+[llm]
+model_path = "./llm/Hermes-2-Pro-Llama-3-8B-Q4_K_M.gguf"
+model = "llama3"
+embedding_model = "sentence-transformers/all-MiniLM-L6-v2"
+device = "cpu"
+batch_size = 32
+
+[rag]
+source_file_location = "./to_process"
+processed_file_location = "./processed"
+vector_store_path = "./chroma_db"

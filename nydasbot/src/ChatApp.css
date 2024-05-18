@@ -1,0 +1,27 @@
+
+/* Hide mid section on screens smaller than 1000px */
+@media screen and (max-width: 1000px) {
+    .mid-section {
+        display: none;
+    }
+}
+
+/* Hide left section on screens smaller than 800px */
+@media screen and (max-width: 800px) {
+    .left-section {
+        display: none;
+    }
+}
+/* Alter right section border on screens smaller than 800px */
+@media screen and (min-width: 800px) {
+    .right-section {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+/* Alter right section border on screens smaller than 800px */
+@media screen and (max-width: 800px) {
+    .right-section {
+        border-radius: 10px;
+    }
+}
