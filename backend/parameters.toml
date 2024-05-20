@@ -1,5 +1,5 @@
 [general]
-logging_level = 50 #logging.INFO
+logging_level = 10 #logging.INFO
 port = 8765
 
 [llm]
